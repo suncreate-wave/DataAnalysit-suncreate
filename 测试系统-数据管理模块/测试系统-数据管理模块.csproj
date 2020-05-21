@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4C3A6D9-5B1C-49AD-83B4-9D5A706C06A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>数据管理模块</RootNamespace>
+    <AssemblyName>数据管理模块</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.1" />
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.1" />
+    <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1.UI, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.UI, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="DevExpress.Printing.v18.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\[ProgramTool]\[SQLite]\system.data.sqlite1.0.102.0win32\sqlite-netFx40-static-binary-bundle-Win32-2010-1.0.102.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interface\DataManagerModule.cs" />
+    <Compile Include="Managers\DataBaseConfig.cs" />
+    <Compile Include="Managers\DbContext.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReadResult.cs" />
+    <Compile Include="Models\TestReport测试报表信息.cs" />
+    <Compile Include="Models\TestResult测试结果信息.cs" />
+    <Compile Include="Models\UUT批次信息.cs" />
+    <Compile Include="Models\UUT状态信息.cs" />
+    <Compile Include="Models\UUT类型信息.cs" />
+    <Compile Include="Modules\BaseModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\BaseModule.Designer.cs">
+      <DependentUpon>BaseModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\批次信息管理\ChildModuleOf批次详细信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\批次信息管理\ChildModuleOf批次详细信息.Designer.cs">
+      <DependentUpon>ChildModuleOf批次详细信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\数据管理\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\数据管理\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\数据管理\外部数据分析\ChildModuleOf数据入库.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\数据管理\外部数据分析\ChildModuleOf数据入库.Designer.cs">
+      <DependentUpon>ChildModuleOf数据入库.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\数据管理\外部数据分析\ChildModuleOf用户选项.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\数据管理\外部数据分析\ChildModuleOf用户选项.Designer.cs">
+      <DependentUpon>ChildModuleOf用户选项.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\数据管理\外部数据分析\ChildModuleOf统计分析.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\数据管理\外部数据分析\ChildModuleOf统计分析.Designer.cs">
+      <DependentUpon>ChildModuleOf统计分析.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DAM-R_环境试验模式.cs" />
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DAM-R_军检模式.cs" />
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DAM-T_环境试验模式.cs" />
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DAM-T_军检模式.cs" />
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DAM-T_自测模式.cs" />
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DAM-R_自测模式.cs" />
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollectionModule.cs" />
+    <Compile Include="Modules\数据管理\数据分析库\我的新算法.cs" />
+    <Compile Include="Modules\数据管理\测试报表管理\ChildModuleOf数据分析.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\数据管理\测试报表管理\ChildModuleOf数据分析.Designer.cs">
+      <DependentUpon>ChildModuleOf数据分析.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\数据管理\测试报表管理\ChildModuleOf计算结果.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\数据管理\测试报表管理\ChildModuleOf计算结果.Designer.cs">
+      <DependentUpon>ChildModuleOf计算结果.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\数据管理\测试报表管理\ChildModuleOf查看报表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\数据管理\测试报表管理\ChildModuleOf查看报表.Designer.cs">
+      <DependentUpon>ChildModuleOf查看报表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\批次信息管理\ChildModuleOf添加UUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\批次信息管理\ChildModuleOf添加UUT.Designer.cs">
+      <DependentUpon>ChildModuleOf添加UUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UUT状态信息管理\ModuleOfUUT状态信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\UUT状态信息管理\ModuleOfUUT状态信息.Designer.cs">
+      <DependentUpon>ModuleOfUUT状态信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\数据管理\测试报表管理\ChildModuleOf报表导入.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\数据管理\测试报表管理\ChildModuleOf报表导入.Designer.cs">
+      <DependentUpon>ChildModuleOf报表导入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\数据管理\ModuleOf数据管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\数据管理\ModuleOf数据管理.Designer.cs">
+      <DependentUpon>ModuleOf数据管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\批次信息管理\ChildModuleOf添加批次信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\批次信息管理\ChildModuleOf添加批次信息.Designer.cs">
+      <DependentUpon>ChildModuleOf添加批次信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\批次信息管理\ModuleOfUUT批次信息管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\批次信息管理\ModuleOfUUT批次信息管理.Designer.cs">
+      <DependentUpon>ModuleOfUUT批次信息管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ViewModuleManager.cs" />
+    <Compile Include="Modules\数据管理\数据分析库\Algorithm.cs" />
+    <Compile Include="Modules\数据管理\数据分析库\定义的算法2.cs" />
+    <Compile Include="Modules\数据管理\数据分析库\定义的算法1.cs" />
+    <Compile Include="Modules\数据管理\数据分析库\通道间一致性公式.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThreadHelper.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\批次信息管理\ChildModuleOf批次详细信息.resx">
+      <DependentUpon>ChildModuleOf批次详细信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\数据管理\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\数据管理\外部数据分析\ChildModuleOf数据入库.resx">
+      <DependentUpon>ChildModuleOf数据入库.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\数据管理\外部数据分析\ChildModuleOf用户选项.resx">
+      <DependentUpon>ChildModuleOf用户选项.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\数据管理\外部数据分析\ChildModuleOf统计分析.resx">
+      <DependentUpon>ChildModuleOf统计分析.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\数据管理\测试报表管理\ChildModuleOf数据分析.resx">
+      <DependentUpon>ChildModuleOf数据分析.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\数据管理\测试报表管理\ChildModuleOf计算结果.resx">
+      <DependentUpon>ChildModuleOf计算结果.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\数据管理\测试报表管理\ChildModuleOf查看报表.resx">
+      <DependentUpon>ChildModuleOf查看报表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\批次信息管理\ChildModuleOf添加UUT.resx">
+      <DependentUpon>ChildModuleOf添加UUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\数据管理\测试报表管理\ChildModuleOf报表导入.resx">
+      <DependentUpon>ChildModuleOf报表导入.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\数据管理\ModuleOf数据管理.resx">
+      <DependentUpon>ModuleOf数据管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\UUT状态信息管理\ModuleOfUUT状态信息.resx">
+      <DependentUpon>ModuleOfUUT状态信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\批次信息管理\ChildModuleOf添加批次信息.resx">
+      <DependentUpon>ChildModuleOf添加批次信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\批次信息管理\ModuleOfUUT批次信息管理.resx">
+      <DependentUpon>ModuleOfUUT批次信息管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-conference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expressconnectgaosutongdao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart-table-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shujubaogao.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaoxi.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wulumuqishigongandashujuguanlipingtai-ico-.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zidongguanli.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2016062114225611473.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_pm.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_reports.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files-and-folders.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_asm.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_act.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_common.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zidingyishujuchuli.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shujuxiugai.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xlsx.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daoru.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daochu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chaxuncopy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daochu2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuju.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beizhu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shangchuan.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shangchuan2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batchimport.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piliangdaochu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piliangdaoru2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huabanfuben2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chakan.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pifa.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\数据可视化1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\数据可视化.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\数据源.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_dfm.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaoxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\数据.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\数据1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\产品.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\数据管理\故障诊断\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

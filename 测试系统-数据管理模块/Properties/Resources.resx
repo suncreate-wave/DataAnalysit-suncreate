@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\m_reports.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="数据" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\数据.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="piliangdaochu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piliangdaochu.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="shuju" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shuju.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="xiaoxi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xiaoxi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="daochu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\daochu2.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="files-and-folders" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\files-and-folders.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="batchimport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\batchimport.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="daochu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\daochu.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="pifa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pifa.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="m_pm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\m_pm.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="apply_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apply_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="huabanfuben2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\huabanfuben2.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="zidongguanli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zidongguanli.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="2016062114225611473" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2016062114225611473.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="m_dfm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\m_dfm.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="shangchuan2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shangchuan2.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="add_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chaxuncopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chaxuncopy.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="m_asm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\m_asm.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="refresh_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shujubaogao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shujubaogao.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="数据源" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\数据源.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="cancel_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="piliangdaoru2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piliangdaoru2.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="m_common" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\m_common.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="数据1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\数据1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="chart-table-" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chart-table-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="daoru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\daoru.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="shujuxiugai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shujuxiugai.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="chakan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chakan.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="数据可视化1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\数据可视化1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="expressconnectgaosutongdao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expressconnectgaosutongdao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zidingyishujuchuli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zidingyishujuchuli.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="online-conference" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\online-conference.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beizhu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beizhu.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="test2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\test2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xlsx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xlsx.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="数据可视化" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\数据可视化.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="m_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\m_act.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="wulumuqishigongandashujuguanlipingtai-ico-" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wulumuqishigongandashujuguanlipingtai-ico-.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="shangchuan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shangchuan.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="产品" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\产品.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>
