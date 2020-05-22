@@ -458,10 +458,7 @@ E:\[Catalog]_TEST\测试系统-数据管理模块XP\测试系统-数据管理模
 E:\[Catalog]_TEST\测试系统-数据管理模块XP\测试系统-数据管理模块\obj\Debug\数据管理模块.Properties.Resources.resources
 E:\[Catalog]_TEST\测试系统-数据管理模块XP\测试系统-数据管理模块\obj\Debug\测试系统-数据管理模块.csproj.GenerateResource.Cache
 E:\[Catalog]_TEST\测试系统-数据管理模块XP\测试系统-数据管理模块\obj\Debug\数据管理模块.exe.licenses
-E:\[Catalog]_TEST\测试系统-数据管理模块XP\测试系统-数据管理模块\bin\Debug\System.Data.SQLite.dll.config
-E:\[Catalog]_TEST\测试系统-数据管理模块XP\测试系统-数据管理模块\obj\Debug\测试系统-数据管理模块.csprojAssemblyReference.cache
-E:\[Catalog]_TEST\测试系统-数据管理模块XP\测试系统-数据管理模块\obj\Debug\测试系统-数据管理模块.csproj.CoreCompileInputs.cache
-E:\[Catalog]_TEST\测试系统-数据管理模块XP\测试系统-数据管理模块\obj\Debug\测试系统-数据管理模块.csproj.CopyComplete
 E:\GIT_Repository\DataAnalysit-suncreate\测试系统-数据管理模块\bin\Debug\数据管理模块.exe.config
 E:\GIT_Repository\DataAnalysit-suncreate\测试系统-数据管理模块\obj\Debug\数据管理模块.exe
 E:\GIT_Repository\DataAnalysit-suncreate\测试系统-数据管理模块\obj\Debug\数据管理模块.pdb
+E:\[Catalog]_TEST\测试系统-数据管理模块XP\测试系统-数据管理模块\obj\Debug\测试系统-数据管理模块.csprojResolveAssemblyReference.cache
