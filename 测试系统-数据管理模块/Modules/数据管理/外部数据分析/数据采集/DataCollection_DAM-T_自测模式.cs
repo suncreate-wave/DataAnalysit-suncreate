@@ -90,7 +90,8 @@ namespace 数据管理模块.Modules
         {
             Dictionary<int, string> testItemDictionary = new Dictionary<int, string>(GetDictionary());
             int startRow = 3;
-            int endRow = 1731;
+            int endRow = 1699;
+            int rowRange = 53; //表行数（含表头）
             for (int rowIndex = startRow; rowIndex < endRow; rowIndex++)
             {
                 //判断是不是为每张表的表头（占位2行）
@@ -104,13 +105,13 @@ namespace 数据管理模块.Modules
                     if (new Regex(@"^-?\d+\.\d+$").IsMatch(worksheet.Cells[rowIndex, columnInedx].Value.ToString()) || worksheet.Cells[rowIndex, columnInedx].Value.ToString() == "0")
                     {
                         ReadResult objReadResult = new ReadResult();
-                        if ((rowIndex - 3) % 54 == 0 && rowIndex != 3)
+                        if ((rowIndex - 3) % rowRange == 0 && rowIndex != 3)
                         {
-                            objReadResult.通道号 = (rowIndex - 3) / 54;
+                            objReadResult.通道号 = (rowIndex - 3) / rowRange;
                         }
                         else
                         {
-                            objReadResult.通道号 = (rowIndex - 3) / 54 + 1;
+                            objReadResult.通道号 = (rowIndex - 3) / rowRange + 1;
                         }
                         objReadResult.频点 = worksheet.Cells[rowIndex, 0].Value.ToString();
                         objReadResult.UUT编号 = fileName;
