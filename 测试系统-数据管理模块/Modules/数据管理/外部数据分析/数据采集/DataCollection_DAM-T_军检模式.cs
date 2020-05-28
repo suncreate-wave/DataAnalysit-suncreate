@@ -17,14 +17,11 @@ namespace 数据管理模块.Modules
         private Dictionary<int, string> MyDic = new Dictionary<int, string>()
             {
                 { 1,"功率"},
-                { 2,"输出功率带内起伏"},
-                { 3,"通道间幅度一致性"},
-                { 4,"带内杂散"},
-                { 5,"带外杂散抑制"},
-                { 6,"功耗"},
-                { 7,"二次谐波"},
-                { 8,"三次谐波"},
-                { 9,"通道间隔离度"},
+                { 2,"带内杂散"},
+                { 3,"带外杂散抑制"},
+                { 4,"二次谐波"},
+                { 5,"三次谐波"},
+                { 6,"通道间隔离度"},
             };
         public override Dictionary<int, string> GetDictionary()
         {
@@ -82,7 +79,7 @@ namespace 数据管理模块.Modules
                     rowIndex += 2;
                 }
                 //逐列读取测试项目和测试结果
-                for (int columnInedx = 1; columnInedx <= 9; columnInedx++)
+                for (int columnInedx = 1; columnInedx <= 6; columnInedx++)
                 {
                     if (new Regex(@"^-?\d+\.\d+$").IsMatch(worksheet.Cells[rowIndex, columnInedx].Value.ToString()) || worksheet.Cells[rowIndex, columnInedx].Value.ToString() == "0")
                     {
@@ -116,24 +113,6 @@ namespace 数据管理模块.Modules
             {
                 case "功率":
                     if (result.测试结果 >= 35)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                case "输出功率带内起伏":
-                    if (result.测试结果 >= 0 && result.测试结果 <= 1)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                case "通道间幅度一致性":
-                    if (result.测试结果 >= 0 && result.测试结果 <= 1)
                     {
                         return true;
                     }
