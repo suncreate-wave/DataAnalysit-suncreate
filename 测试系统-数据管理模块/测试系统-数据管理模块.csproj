@@ -140,6 +140,9 @@
     <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DAM-T_自测模式.cs" />
     <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DAM-R_自测模式.cs" />
     <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollectionModule.cs" />
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DY-DAM-R_自测模式.cs" />
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DY-DAM-R_军检模式.cs" />
+    <Compile Include="Modules\数据管理\外部数据分析\数据采集\DataCollection_DY-DAM-R_环境试验模式.cs" />
     <Compile Include="Modules\数据管理\数据分析库\我的新算法.cs" />
     <Compile Include="Modules\数据管理\测试报表管理\ChildModuleOf数据分析.cs">
       <SubType>Form</SubType>

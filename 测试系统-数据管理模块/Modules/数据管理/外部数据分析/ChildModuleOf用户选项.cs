@@ -29,8 +29,9 @@ namespace 数据管理模块.Modules
         }
         private void Init()
         {
-            comboBoxEdit_UUT类型.Properties.Items.Add("DAM-R");
-            comboBoxEdit_UUT类型.Properties.Items.Add("DAM-T");
+            comboBoxEdit_UUT类型.Properties.Items.Add("多遥DAM-R");
+            comboBoxEdit_UUT类型.Properties.Items.Add("小型DAM-R");
+            comboBoxEdit_UUT类型.Properties.Items.Add("小型DAM-T");
             comboBoxEdit_测试模式.Properties.Items.Add("自测模式");
             comboBoxEdit_测试模式.Properties.Items.Add("军检模式");
             comboBoxEdit_测试模式.Properties.Items.Add("环境试验模式");
@@ -43,22 +44,31 @@ namespace 数据管理模块.Modules
             ComboBoxEdit combo = sender as ComboBoxEdit;
             switch (comboBoxEdit_UUT类型.Text + "-" + comboBoxEdit_测试模式.Text)
             {
-                case "DAM-R-自测模式":
+                case "多遥DAM-R-自测模式":
+                    ViewModuleManager.ChildModuleOf统计分析.CurrentDataCollectionModule = new DataCollection_DY_DAM_R_自测模式();
+                    break;
+                case "多遥DAM-R-军检模式":
+                    ViewModuleManager.ChildModuleOf统计分析.CurrentDataCollectionModule = new DataCollection_DY_DAM_R_军检模式();
+                    break;
+                case "多遥DAM-R-环境试验模式":
+                    ViewModuleManager.ChildModuleOf统计分析.CurrentDataCollectionModule = new DataCollection_DY_DAM_R_环境试验模式();
+                    break;
+                case "小型DAM-R-自测模式":
                     ViewModuleManager.ChildModuleOf统计分析.CurrentDataCollectionModule = new DataCollection_DAM_R_自测模式();
                     break;
-                case "DAM-R-军检模式":
+                case "小型DAM-R-军检模式":
                     ViewModuleManager.ChildModuleOf统计分析.CurrentDataCollectionModule = new DataCollection_DAM_R_军检模式();
                     break;
-                case "DAM-R-环境试验模式":
+                case "小型DAM-R-环境试验模式":
                     ViewModuleManager.ChildModuleOf统计分析.CurrentDataCollectionModule = new DataCollection_DAM_R_环境试验模式();
                     break;
-                case "DAM-T-自测模式":
+                case "小型DAM-T-自测模式":
                     ViewModuleManager.ChildModuleOf统计分析.CurrentDataCollectionModule = new DataCollection_DAM_T_自测模式();
                     break;
-                case "DAM-T-军检模式":
+                case "小型DAM-T-军检模式":
                     ViewModuleManager.ChildModuleOf统计分析.CurrentDataCollectionModule = new DataCollection_DAM_T_军检模式();
                     break;
-                case "DAM-T-环境试验模式":
+                case "小型DAM-T-环境试验模式":
                     ViewModuleManager.ChildModuleOf统计分析.CurrentDataCollectionModule = new DataCollection_DAM_T_环境试验模式();
                     break;
                 default:
