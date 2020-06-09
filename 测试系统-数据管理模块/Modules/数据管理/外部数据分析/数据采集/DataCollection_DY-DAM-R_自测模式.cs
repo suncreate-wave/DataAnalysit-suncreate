@@ -118,7 +118,7 @@ namespace 数据管理模块.Modules
                         objReadResult.频点 = worksheet.Cells[rowIndex, 0].Value.ToString();
                         objReadResult.UUT编号 = fileName;
                         objReadResult.测试项目 = testItemDictionary[columnInedx];
-                        objReadResult.测试结果 = Math.Round(Convert.ToDouble(worksheet.Cells[rowIndex, columnInedx].Value.ToString()), 2);
+                        objReadResult.测试结果 = Math.Round(Convert.ToDecimal(worksheet.Cells[rowIndex, columnInedx].Value.ToString()), 2,MidpointRounding.AwayFromZero);
                         objReadResult.IsPassed = IsPassed(objReadResult);
                         //if (objReadResult.IsPassed == false)
                         //{
@@ -143,7 +143,7 @@ namespace 数据管理模块.Modules
                     objReadResult.频点 = "2252MHz";
                     objReadResult.UUT编号 = fileName;
                     objReadResult.测试项目 = GetDictionary()[1 + indexAddNumber];
-                    objReadResult.测试结果 = Math.Round(Convert.ToDouble(worksheet.Cells[rowIndex, 12].Value.ToString()), 2);
+                    objReadResult.测试结果 = Math.Round(Convert.ToDecimal(worksheet.Cells[rowIndex, 12].Value.ToString()), 2,MidpointRounding.AwayFromZero);
                     objReadResult.IsPassed = IsPassed(objReadResult);
                     //if (objReadResult.IsPassed == false)
                     //{
@@ -163,7 +163,7 @@ namespace 数据管理模块.Modules
                     objReadResult.频点 = "2252MHz";
                     objReadResult.UUT编号 = fileName;
                     objReadResult.测试项目 = GetDictionary()[2 + indexAddNumber];
-                    objReadResult.测试结果 = Math.Round(Convert.ToDouble(worksheet.Cells[rowIndex, 12].Value.ToString()), 2);
+                    objReadResult.测试结果 = Math.Round(Convert.ToDecimal(worksheet.Cells[rowIndex, 12].Value.ToString()), 2,MidpointRounding.AwayFromZero);
                     objReadResult.IsPassed = IsPassed(objReadResult);
                     //if (objReadResult.IsPassed == false)
                     //{
@@ -188,7 +188,7 @@ namespace 数据管理模块.Modules
                     if (new Regex(@"^-?\d+\.\d+$").IsMatch(worksheet.Cells[rowIndex, 2].Value.ToString()) || worksheet.Cells[rowIndex, 2].Value.ToString() == "0")
                     {
                         ReadResult objReadResult = new ReadResult();
-                        objReadResult.测试结果 = Math.Round(Convert.ToDouble(worksheet.Cells[rowIndex, 2].Value.ToString()), 2);
+                        objReadResult.测试结果 = Math.Round(Convert.ToDecimal(worksheet.Cells[rowIndex, 2].Value.ToString()), 2,MidpointRounding.AwayFromZero);
                         objReadResult.测试项目 = MyDic[i + indexAddNumber];
                         objReadResult.UUT编号 = fileName;
                         objReadResult.通道号 = roadNumber;
@@ -226,7 +226,7 @@ namespace 数据管理模块.Modules
                         return false;
                     }
                 case "通道带内增益起伏(±)":
-                    if (result.测试结果 > 0 && result.测试结果 < 1.5)
+                    if (result.测试结果 > 0 && result.测试结果 < 1.5m)
                     {
                         return true;
                     }
@@ -253,7 +253,7 @@ namespace 数据管理模块.Modules
                         return false;
                     }
                 case "噪声系数":
-                    if (result.测试结果 < 1.5)
+                    if (result.测试结果 < 1.5m)
                     {
                         return true;
                     }
@@ -298,7 +298,7 @@ namespace 数据管理模块.Modules
                         return false;
                     }
                 case "通道幅度稳定性(±)":
-                    if (result.测试结果 <= 0.75)
+                    if (result.测试结果 <= 0.75m)
                     {
                         return true;
                     }
@@ -307,7 +307,7 @@ namespace 数据管理模块.Modules
                         return false;
                     }
                 case "通道间幅度一致性的稳定性(±)":
-                    if (result.测试结果 <= 0.5)
+                    if (result.测试结果 <= 0.5m)
                     {
                         return true;
                     }

@@ -15,7 +15,7 @@ namespace 数据管理模块.Models
         //[SugarColumn(ColumnName = "测试项目")]
         public string  测试项目 {get;set; }
         //[SugarColumn(ColumnName = "测试结果")]
-        public double 测试结果 {get;set; }
+        public decimal 测试结果 {get;set; }
         //[SugarColumn(ColumnName = "UUT批次号",IsNullable =true)]
         public string UUT批次号 { get; set; }
         public bool IsPassed { get;set;}

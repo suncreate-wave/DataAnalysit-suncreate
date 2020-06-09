@@ -106,7 +106,7 @@ namespace 数据管理模块.Modules
                         objReadResult.频点 = worksheet.Cells[rowIndex, 0].Value.ToString();
                         objReadResult.UUT编号 = fileName;
                         objReadResult.测试项目 = testItemDictionary[columnInedx];
-                        objReadResult.测试结果 = Math.Round(Convert.ToDouble(worksheet.Cells[rowIndex, columnInedx].Value.ToString()), 2);
+                        objReadResult.测试结果 = Math.Round(Convert.ToDecimal(worksheet.Cells[rowIndex, columnInedx].Value.ToString()), 2,MidpointRounding.AwayFromZero);
                         objReadResult.IsPassed = IsPassed(objReadResult);
                         //if (objReadResult.IsPassed == false)
                         //{
@@ -141,7 +141,7 @@ namespace 数据管理模块.Modules
                         return false;
                     }
                 case "通道带内增益起伏(±)":
-                    if (result.测试结果 > 0 && result.测试结果 < 1.5)
+                    if (result.测试结果 > 0 && result.测试结果 < 1.5m)
                     {
                         return true;
                     }
@@ -159,7 +159,7 @@ namespace 数据管理模块.Modules
                         return false;
                     }
                 case "通道噪声系数":
-                    if (result.测试结果 < 1.3)
+                    if (result.测试结果 < 1.3m)
                     {
                         return true;
                     }
